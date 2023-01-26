@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <section id="buy-tickets">
+      <div id="payment">
+        <form>
+          <h2 id="ticket-heading">Tickets</h2>
+          <label class="tickets" for="general">General Admission - $5.00</label>
+          <input type="number" id="general" value=0 min="0" />
+          <br />
+          <label class="tickets" for="senior-students"
+            >Students and Seniors - $3.00</label
+          >
+          <input type="number" id="senior-students" value= 0  min="0"/>
+          <p id="validate-message"> </p>
+          <div>
+            <h2 id="payment-heading">Payment Information</h2>
+            <input type="radio" name="payment-info" id="paypal"  />
+            <label class="payment-mode" for="paypal">Paypal</label>
+            <i class="fa fa-paypal"></i>
+            <div id="show-paypal-fields" style="display: none;" >
+              <input class="dynamic-html-paypal" id="paypal-email" type="email" placeholder="Paypal email address" value="" /> 
+              <br>
+              <input class="dynamic-html-paypal" id="paypal-password"  type="password" placeholder="Paypal password" value="" />
+              <p id="paypal-error-message" ></p>
+            </div>
+            <br />
+            <input type="radio" name="payment-info" id="credit" />
+            <label class="payment-mode" for="credit">Credit or Debit</label>
+            <i class="fa fa-credit-card"></i>
+            <div id="show-credit-fields" style="display: none;">
+              <input id="cc-number" type="text" placeholder="Credit card number" value=""></input>
+              <input id="cvv" type="text" placeholder="CVV" value="" />
+              <p id="credit-error-message" ></p>
+            </div>
+          </div>
+          <br />
+          <button type="button" id="pay-now-btn">Pay Now</button>
+        </form>
+      </div>
+
+      <div id="order-summary">
+        <img src="./assests/movie.png" alt="avengers-poster" />
+        <p id="show-detail-heading" >Show Details</p>
+        <div>
+          
+          <p>Avengers</p>
+          <p>Feb 8 2023</p>
+          <p>6pm to 8pm</p>
+        </div>
+        <p id="order-summary-heading" >Order Summary</p>
+        <div id="order-summary-total">
+          <div>
+            <p>General Admit (<span id="general-admit"></span> x $5.00)</p>
+            <p>Senior Admit (<span id="senior-admit"></span> x $3.00)</p>
+            <p>Subtotal</p>
+            <p>Tax (13%)</p>
+            <p>You must pay:</p>
+          </div>
+          <div>
+            <p>$ <span id="general-ticket-total">0</span> </p>
+            <p>$ <span id="senior-ticket-total">0</span> </p>
+            <p>$ <span id="subtotal">0</span> </p>
+            <p>$ <span id="tax">0</span> </p>
+            <p>$ <span id="total">0</span> </p>
+
+          </div>
+          
+
+
+         
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

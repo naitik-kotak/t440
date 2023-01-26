@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  width: 99vw;
+  height: 100vh;
+  background-image: url('./assests/movie.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+main > div {
+  width: 20%;
+  height: 20%;
+  border: 1px solid white;
+  text-align: center;
+  background-color: grey;
+  margin-right: 5rem;
+  font-size: 30px;
+  color: white;
+}
+
+#now-playing-title {
+  padding: 2.5rem 0 1rem 0;
+}
+
+main > div > button {
+  margin-top: 2rem;
+  width: 50%;
+  height: 20%;
+  font-size: 25px;
+}
+
+/* Purchase Tickets Section  */
+
+#buy-tickets {
+  height: 80vh;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  /* background-color: aqua; */
+}
+
+#payment {
+  text-align: center;
+  /* background-color: bisque; */
+  background-color: #eeee;
+  height: 80%;
+  width: 35%;
+  border: 1px solid black;
+  margin-top: 5rem;
+}
+#ticket-heading {
+  /* border: 1px solid red; */
+  font-size: 30px;
+  margin: 3rem 0 1rem 0;
+}
+
+#payment-heading {
+  margin: 3rem 0 1rem 0;
+  /* border: 1px solid red; */
+  font-size: 30px;
+}
+
+#order-summary {
+  background-color: #eeee;
+  width: 20%;
+  height: 80%;
+  text-align: center;
+  line-height: 27px;
+  font-size: 20px;
+  border: 1px solid black;
+  margin-top: 5rem;
+}
+
+#order-summary > img {
+  width: 100%;
+  height: auto;
+  margin: 0rem 0 1rem 0;
+}
+#order-summary-heading {
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+}
+#show-detail-heading {
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+}
+
+input[type='number'] {
+  width: 10%;
+  height: 55px;
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+.tickets {
+  display: inline-block;
+  /* background-color: red; */
+  border: 1px solid black;
+  padding: 1rem;
+  width: 500px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.payment-mode {
+  display: inline-block;
+  /* background-color: red; */
+  border: 1px solid black;
+  padding: 1rem;
+  width: 600px;
+  font-size: 18px;
+  text-align: center;
+  /* margin-right: 10px;
+  margin-bottom: 1rem; */
+  margin: 1rem 10px 1rem 0;
+}
+
+input[type='radio'] {
+  display: inline;
+  width: 10%;
+  height: 20px;
+}
+
+.fa-credit-card {
+  font-size: 35px;
+}
+
+.fa-paypal {
+  font-size: 35px;
+}
+
+#payment > form > button {
+  margin-top: 100px;
+  width: 260px;
+  height: 40px;
+}
+
+.dynamic-html-paypal {
+  padding: 1rem;
+  width: 600px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+.dynamic-html-credit {
+  padding: 1rem;
+  width: 600px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+#cc-number {
+  padding: 1rem;
+  width: 500px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+#cvv {
+  width: 97px;
+  height: 55px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#validate-message,
+#paypal-error-message,
+#credit-error-message {
+  color: red;
+  font: 26px;
+}
+
+#success-msg {
+  color: green;
+  font: 26px;
+}
+
+#order-summary-total {
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+  height: 10vh;
+  background-color: palegoldenrod;
+  border: 1px solid black;
+}
+
+footer {
+  height: 10vh;
+  background-color: palegoldenrod;
+  border: 1px solid black;
+}
